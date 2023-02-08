@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchors and Hyperlinks</title>
+</head>
+<body>
+    <h1><b>section 6.1</b></h1>
+<h1>To link to another site</h1>
+  <a href="https://shubhchintak.co/">Shubhchintak Technology Pvt. Ltd.</a> <!--It creates a hyperlink, to the specifieed URL as specified by the href (hypertext reference) attribute, with
+    the anchor text "Shubhchintak Technology Pvt. Ltd."-->
+  
+<h1>To denote that this link leads to an external website </h1>
+ <a href="https://shubhchintak.co/" rel="external">Shubhchintak Technology Pvt. Ltd.(for an external website)</a> 
+
+<h1> link to a site that uses a protocol other than HTTP. For example FTP site </h1>
+ <a href="ftp://shubhchintak.co/" rel="external">Shubhchintak Technology Pvt. Ltd.(for FTP site)</a>
+
+ <h1><b>section 6.2</b></h1>
+<h1> Link to an anchor</h1>
+    <h2>First topic</h2>
+    <p>Content about the first topic</p>
+    <h2>Second topic</h2>
+    <p>Content about the second topic</p>
+
+<!--if when several sections are their then to create a Table of Contents at the top of the page with quick-links
+(or bookmarks) to specific sections, an id attribute that topics can be used to link them-->
+    <h2 id="Topic1">First topic</h2> 
+    <p>Content about the first topic</p>
+    <h2 id="Topic2">Second topic</h2>
+    <p>Content about the second topic</p>
+
+<!--anchor can be used in table of contents:-->>
+    <h1>Table of Contents</h1>
+    <a href='#Topic1'>Click to jump to the First Topic</a> <br>
+    <a href='#Topic2'>Click to jump to the Second Topic</a>  <br>
+
+<!--These anchors are also attached to the web page they're on (page1.html). So you can link across the site from one
+page to the other by referencing the page and anchor name.-->
+    <a href="page1.html#Topic1">look back in the First Topic</a> <br>
+  
+    <h1><b>section 6.3</b></h1>
+    <h1>To use a relative path to link to pages on the same website</h1>
+    <a href="/example">Text Here</a> <!--it would go to the file example at the root directory (/) of the server -->
+    
+   <h1> If this link was on http://example.com, the following two links would bring the user to the same location</h1>
+    <a href="/page">Text Here</a> <br>
+    <a href="http://example.com/page">Text Here</a>
+    <!--Both of the above would go to the page file at the root directory of example.com-->
+
+    <h1><b>section 6.4</b></h1>
+    <h1>Link that dials a number</h1>
+    <a href="tel:11234567890">Call us</a> <!--If the value of the href-attribute begins with tel:, your device will dial the number when you click it. This works on
+        mobile devices or on computers/tablets running software – like Skype or FaceTime – that can make phone calls.
+        -->
+
+    <h1><b>section 6.5</b></h1>
+    <h1>Open link in new tab/window</h1>
+    <a href="example.com" target="_blank">Text Here</a> <!--The target attribute specifies where to open the link. By setting it to _blank, you tell the browser to open it in a
+        new tab or window (per user preference)-->
+ 
+
+    <h1><b>section 6.6</b></h1>
+    <h1> Link that runs JavaScript</h1>
+    <h3>use the javascript: protocol to run the text as JavaScript instead of opening it as a normal link</h3>
+    <a href="javascript:myFunction();">Run Code</a>
+
+    <h3>To achieve the same thing using the onclick attribute</h3>
+    <a href="#" onclick="myFunction(); return false;">Run Code</a> <!--The return false; is necessary to prevent your page from scrolling to the top when the link to # is clicked. Make
+        sure to include all code you'd like to run before it, as returning will stop execution of further code -->
+
+    <h3> can include an exclamation mark ! after the hashtag in order to prevent the page from scrolling to the top</h3>
+    <a href="#!" onclick="myFunction();">Run Code</a>
+
+    <h1><b>section 6.7</b></h1>
+    <h3>Link that runs email client</h3>
+    <!--Basic usage-->
+    <h4>If the value of the href-attribute begins with mailto: it will try to open an email client on click</h4>
+    <a href="mailto:example@example.com">Send email</a> <!--This will put the email address example@example.com as the recipient for the newly created email.-->
+    
+    <h3>Cc and Bcc</h3>
+    <h4>To add addresses for cc- or bcc- recipients using the following syntax</h4>
+    <a href="mailto:example@example.com?cc=john@example.com&bcc=jane@example.com">Send email</a>
+
+    <h3>Subject and body text</h3>
+    <h4>You can populate the subject and body for the new email as well</h4>
+    <a href="mailto:example@example.com?subject=Example+subject&body=Message+text">Send email</a> <!--Those values must be URL encoded-->
+
+</body>
+</html>
