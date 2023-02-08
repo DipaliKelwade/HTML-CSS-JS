@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordered Lists</title>
+</head>
+<body>
+    <h1>Ordered Lists in HTML</h1>
+    <ol>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+    </ol>
+    <!-- Setting starting number in ordered list. -->
+    <h3>Setting starting number in Ordered Lists</h3>
+    <p>We can set the starting number of an ordered list using the start attribute. The below example demonstrates ordered list <b>starting from 4.</b> Also, the fourth item is assigned a specific number i.e. <b>15.</b></p>
+    <ol start="5">
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <!-- Explicitly assigning an item a specific number -->
+        <li value = 15>Fourth Item</li>
+    </ol>
+
+    <!-- Reversing a list -->
+    <p>A ordered list can be reversed by adding <b>"reversed"</b> in your ol tag.</p>
+    <ol reversed>
+        <li>Fifth Item</li>
+        <li>Fourth Item</li>
+        <li>Third Item</li>
+        <li>Second Item</li>
+        <li>First Item</li>
+
+    </ol>
+
+    <!-- Changing type of the numeral -->
+    <p>Alphabetically ordered list (uppercase)</p>
+    <ol type="A">
+        <li>First </li>
+        <li>Second</li>
+        <li>Third</li>
+    </ol>
+
+    <p>Ordered list in roman (lowercase)</p>
+    <ol type="i">
+        <li>AAA</li>
+        <li>BBBB</li>
+    </ol>
+
+    <p>Alphabetically ordered list (lowercase)</p>
+    <ol type="a">
+        <li>First </li>
+        <li>Second</li>
+        <li>Third</li>
+    </ol>
+
+    <p>Ordered list in roman (uppercase)</p>
+    <ol type="I">
+        <li>First </li>
+        <li>Second</li>
+        <li>Third</li>
+    </ol>
+
+    <h1>unordered and descriptive List</h1>
+    <!--  If changing the order of the items does NOT make the list incorrect, then use ul-->
+    <h2>Unordered List</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <!-- Nested Unordered List -->
+    <p>The below example demonstrates unordered nested list.</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+         <ul>
+            <li>A</li>
+            <li>B</li>
+         </ul>
+        <li>Item 3</li>
+        <li>Item 4</li>
+         <ul>
+            <li>A</li>
+             <ul>
+                <li>a</li>
+             </ul>
+         </ul>
+        <li>Item 5</li>
+    </ul>
+
+    <!-- Implementing Nested list of ordered and unordered elements -->
+    <p>The following example demonstrates nested list having ordered and unordered elements.</p>
+    <ol>
+        <li>First item</li>
+        <ul>
+            <li>item A</li>
+            <li>item B</li>
+            <ol>
+                <li>Item a</li>
+            </ol>
+        </ul>
+        <li>Second item</li>
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+        </ol>
+        <li>Item 3</li>
+        <ol type="I">
+            <li>Element1</li>
+            <li>Ele</li>
+        </ol>
+        <li>Item 4</li>
+        <ol type="i">
+            <li>Element2</li>
+            <li>Ele</li>
+        </ol>
+    </ol>
+
+    <!-- Implementing Description Lists -->
+    <h2>Description List</h2> <!--(or definition list, as it was called before HTML5)-->
+    <!--it consist of name-value groups, where the name is given in the dt element, and the value is given in the dd element-->
+    <dl>
+        <dt>Coffee:</dt>
+        <dd>a hot drink made from the roasted and ground seeds (coffee beans) of a tropical shrub.</dd>
+
+        <dt>Milk:</dt>
+        <dd>an opaque white fluid rich in fat and protein</dd>
+    </dl>
+</body>
+</html>
+
