@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in HTML</title>
+</head>
+<body>
+    <h1>Section 8.1: Simple Table</h1>
+    <!-- TO create a table we need to use table, tr, th and td tags -->
+    <table>
+        <tr>
+            <th>Sr no.</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>student 1</td>
+            <td>Name 1</td>
+        </tr>
+        <tr>
+            <td>Student 2</td>
+            <td>Name 2</td>
+        </tr>
+    </table>
+
+    <h1>Section 8.2: Spanning columns or rows</h1>
+    <table>
+
+        <tr>
+            <th>Sr no.</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>student 1</td>
+            <td>Name 1</td>
+        </tr>
+        <tr>
+            <td colspan="2">completed all the given task</td>
+        </tr>
+        <tr>
+            <td>Student 2</td>
+            <td>Name 2</td>
+        </tr>
+        <tr>
+            <td rowspan="2">completed only two task outof three task</td>
+        </tr>
+        
+    </table>
+
+    <h1>Section 8.3: Column group</h1>
+    <table>
+        <colgroup span="2"></colgroup>
+        <colgroup span="2"></colgroup>
+    </table>
+
+    <table>
+        <colgroup>
+        <col id="MySpecialColumn" />
+        <col />
+        </colgroup>
+        <colgroup>
+        <col class="CoolColumn" />
+        <col class="NeatColumn" span="2" />
+        </colgroup>
+    </table>
+
+    <h1>Section 8.4: Table with thead, tbody, tfoot, and caption</h1>
+    <table>
+        <caption>Table Title</caption> <!--caption is the first child of table -->
+         <thead> <!--thead is after caption -->
+          <tr>
+              <th>Header content 1</th>
+              <th>Header content 2</th>
+         </tr>
+         </thead>
+         <tbody> <!--tbody is after thead-->
+            <tr>
+                <td>Body content 1</td>
+                <td>Body content 2</td>
+            </tr>
+         </tbody>
+         <tfoot><!--tfoot can be placed before or after tbody, but not in a group of tbody --> 
+        <!-- Regardless where tfoot is in markup, it is rendered at the bottom --> 
+          
+         <tr>
+              <td>Footer content 1</td>
+              <td>Footer content 2</td>
+         </tr>
+         </tfoot>
+    </table>
+    
+    <h1>Section 8.5: Heading scope</h1>
+    <table>
+        <thead>
+         <tr>
+             <td></td>
+               <th scope="col">Column Heading 1</th>
+               <th scope="col">Column Heading 2</th>
+         </tr>
+        </thead>
+        <tbody>
+             <tr>
+                <th scope="row">Row Heading 1</th>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                 <th scope="row">Row Heading 1</th>
+                 <td></td>
+                 <td></td>
+            </tr>
+        </tbody>
+    </table>
+        
+</body>
+</html>
