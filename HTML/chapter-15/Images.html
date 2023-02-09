@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images in HTML</title>
+</head>
+<body>
+    <H1>Images in HTML</H1>
+    <h3>Adding a local image in HTML </h3>
+    <img src="bappa.jpg.jfif" alt="Dagdusheth Ganpati Image">
+
+    <h3>Adding an image from web URL in HTML </h3>
+    <img src="https://i.pinimg.com/originals/54/d2/0a/54d20a85bb567ab81a718a1b04b8d9b3.jpg" alt="Bappa image from web">
+
+    <h3>Responsive image using srcset attribute</h3>
+    <img sizes="(min-width: 1200px) 580px,
+                (min-width: 640px) 48vw, 98vw"
+         srcset="image1.jfif 100w,
+                 image2.jfif 600w,
+                 image3.jpg 900w"
+         src="image1.jfif" alt="hello">
+    
+    <h3>Responsive image using picture element</h3>
+    <picture>
+        <source media="(min-width: 600px)" srcset="image2.jfif">
+        <source media="(min-width: 450px)" srcset="image3.jpg">
+        <img src="bappa.jpg.jfif" style="width:auto;">
+       </picture>
+</body>
+</html>
