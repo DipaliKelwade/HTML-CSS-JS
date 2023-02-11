@@ -1,0 +1,35 @@
+/* Sets margin and padding of all the elements to 15px and 10px respectively. */
+        /* We use asterik(*) when we want to select all the lements of a page */
+        *{
+            margin: 15px;
+            padding: 10px;
+        }
+
+        /* Sets text color to red for the elements belonging to para class */
+        /* To denote class we use dot(.) */
+        .para{
+            color: red;
+        }
+
+        /* Sets background color of the element to yellow whose id is para1 */
+        /* to denote id we use hash(#) */
+        #para1{
+            background-color: yellow;
+        }
+
+         /* Sets border of 5px and green color to the element whose id is para2 */
+        #para2{
+            border: 5px solid;
+            border-color: seagreen;
+        }
+
+        /* Aligns the text to center belonging to content class */
+        .content{
+            text-align: center;
+        }
+
+        /* Sets the background color to tan and text color to teal of the div element belonging to content class. */
+        div.content{
+            background-color: tan;
+            color: teal;
+        }  
