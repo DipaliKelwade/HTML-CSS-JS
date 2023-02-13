@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output Element Using For and Form Attributes</title>
+</head>
+<body>
+    <form id="form1" name="form1" oninput="out1.value = parseInt(in1.value, 10) + parseInt(in2.value,10)">
+    <fieldset>
+    <legend>Output Example</legend>
+    <input type="number" id="in1" name="in1" value="0">
+    <br/>
+    +
+    <br>
+    <input type="number" id="in2" name="in2" value="0">
+    </fieldset>
+    </form>
+    <output name="out1" for="in1 in2" form="form1">0</output>
+</body>
+</html>
