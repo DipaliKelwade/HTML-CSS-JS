@@ -1,0 +1,21 @@
+.para{
+    color: cornflowerblue;
+    font-size: 40px;
+}
+h1{
+    color: green;
+    text-decoration: underline;
+}
+p{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    color: chocolate;
+}
+li {
+    list-style-type: square;
+
+}
+li {
+    list-style-position: inside;
+   }
