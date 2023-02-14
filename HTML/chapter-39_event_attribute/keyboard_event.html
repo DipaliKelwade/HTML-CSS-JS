@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events</title>
+</head>
+<body>
+    <!--onkeydown-->
+    <h1>HTML DOM Events</h1>
+    <h2>The onkeydown Event</h2>
+    <p>Press a key in the input field:</p>
+    <input type="text" onkeydown="myFunction1()">
+    <p id="demo"></p>
+    <script>
+    function myFunction1() {
+    document.getElementById("demo").innerHTML = "You pressed a key inside the input field";
+    }
+    </script>
+
+    <!--onkeypress-->
+    <h1>HTML DOM Events</h1>
+    <h2>The onkeypress Event</h2>
+     <p>A function is triggered when the user is pressing a key in the input field.</p>
+     <input type="text" onkeypress="myFunction2()">
+     <script>
+     function myFunction2() {
+     alert("You pressed a key inside the input field");
+     }
+     </script>
+
+     <!--onkeyup-->
+     <h1>HTML DOM Events</h1>
+     <h2>The keyup Event</h2>
+     <p>A function is triggered when the user releases a key in the input field.</p>
+     <p>The function transforms the input field to upper case:</p>
+     Enter your name: <input type="text" id="fname" onkeyup="myFunction3()">
+     <script>
+     function myFunction3() {
+     let x = document.getElementById("fname");
+     x.value = x.value.toUpperCase();
+     }
+     </script>
+
+</body>
+</html>
+
