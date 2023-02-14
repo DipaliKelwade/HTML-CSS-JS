@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Gradients</title>
+</head>
+<style>
+ /* body {
+    background: linear-gradient(to left, rgb(234, 88, 175), skyblue); 
+}  */
+body {
+ background: repeating-linear-gradient(-90deg, rgb(45, 108, 184), rgb(100, 221, 189) 10%, rgb(215, 133, 133) 10%, black 10% );
+}
+/*
+body{
+    background: repeating-radial-gradient(red, red 10%, white 10%, white 20%);
+} */
+
+</style>
+<body>
+    <form class="color">
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" required><br><br>
+        <label>Email:</label>
+        <input type="email" name="name" placeholder="Enter your email" required><br><br>
+        <label>Phone:</label>
+        <input type="tel" name="name" placeholder="+91 7178891273" required><br><br>
+        <label>Gender</label>
+        
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="other">Other
+        <br><br>
+        
+        <select name="age" id="age">
+            <option value="Select your age">Select your age</option>
+            <option value="18-25">18-25</option>
+            <option value="18-25">25-35</option>
+            <option value="18-25">35-45</option>
+            <option value="18-25">45-55</option>
+            <option value="18-25">55-55</option>
+            <option value="18-25">65-75</option>
+        </select><br><br>
+        <label>Select Your Branch</label><br>
+        <input type="checkbox" value="CSE">
+        <input type="checkbox" value="ME">
+        <input type="checkbox" value="EE">
+        <br><br>
+        <Button type="button" value="submit">Submit</Button>
+    </form>
+</body>
+</html>
