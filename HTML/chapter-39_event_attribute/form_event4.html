@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form event</title>
+    </head>
+<body onbeforeunload="return myFunction()">
+
+<p>Close this window, press F5 or click on the link below to invoke the onbeforeunload event.</p>
+
+<a href="https://google.com">Click here to go to google.com</a>
+  
+<script>
+function myFunction() {
+  return "Write something clever here...";
+}
+</script>
+
+</body>
+</html>
