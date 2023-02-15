@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Direction</title>
+</head>
+<style>
+    .div1 {
+        direction: ltr; /* Default, text read read from left-to-right */
+        }
+        .ex {
+        direction: rtl; /* text read from right-to-left */
+        }
+        .horizontal-tb {
+        writing-mode: horizontal-tb; /* Default, text read from left-to-right and top-to-bottom. */
+        }
+        .vertical-rtl {
+        writing-mode: vertical-rl; /* text read from right-to-left and top-to-bottom */
+        }
+        .vertical-ltr {
+        writing-mode: vertical-rl; /* text read from left-to-right and top to bottom */
+        }
+
+</style>
+<body>
+    <div class="div1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptates repudiandae culpa ducimus. Et, aperiam accusantium officiis atque porro dignissimos voluptas sint magni sapiente doloremque assumenda autem deserunt tempora nam!
+    </div>
+    <div class="ex">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque pariatur distinctio similique, dignissimos harum incidunt quae quasi ab libero illum, officia beatae consequatur eius fugit quos saepe quas quisquam dolor?</div>
+
+    <div class="horizantal-tb">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, illo aut. Corporis, accusamus. A fuga voluptatibus ex totam repellat aliquam veniam! Sit quibusdam sapiente quo incidunt earum doloremque natus eaque!
+    </div>
+    <div class="vertical-rtl">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, iure corrupti laboriosam laborum itaque, quis officiis soluta, alias nostrum quae harum aperiam sed distinctio? Recusandae labore fuga adipisci odit accusamus.
+    </div>
+    <div class="vertical-ltr">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis at voluptatibus officiis ducimus, fuga laborum nobis consequatur quidem, quia, corporis dicta odit beatae illum? Voluptates esse cum ab fuga sunt!
+    </div>
+
+</body>
+</html>
