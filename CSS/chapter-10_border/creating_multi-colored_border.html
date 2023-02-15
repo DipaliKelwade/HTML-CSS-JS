@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a multi-colored border using border image</title>
+</head>
+<style>
+    .bordered {
+        text-align:center;
+        border-top: 10px solid;
+        border-image: linear-gradient(to right, red 20%, green 20%, green 40%, blue 40%, blue 60%, maroon 60%, maroon 80%, chocolate 80%); /* gradient with required colors */
+        border-image-slice: 1;        }
+</style>
+<body>
+    <div class='bordered'>Border on all sides</div>
+</body>
+</html>
