@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail Layout using Flexbox</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .header{
+        flex: 0 0  50px;
+        background-color: cornflowerblue;
+    }
+    .content-body{
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .content-body .sidenav{
+        order: -1;
+        flex: 0  0 100px;
+        overflow: auto;
+        background-color: blueviolet;
+        padding: 10px;
+    }
+    .content-body .ads{
+        flex-direction: 0 0 100px;
+        overflow: auto;
+        padding: 10px;
+        background-color: blanchedalmond;
+    }
+    .footer{
+        flex: 0 0 50px;
+        text-align: center;
+        background-color: cadetblue;
+    }
+    .content{
+        flex: 0 0  100px;
+        padding: 10px;
+    }
+</style>
+<body>
+    <div class="container">
+        <header class="header">Header</header>
+        <div class="content-body">
+            <main class="content">Content</main>
+            <nav class="sidenav">Nav</nav>
+            <aside class="ads">Ads</aside>
+        </div>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>
