@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapsing</title>
+</head>
+<style>
+    .outer-top{
+        margin: 10px;
+        }
+        .inner-top{
+        margin: 15px;
+        }
+        .outer-bottom{
+        margin: 20px;
+        }
+        .inner-bottom{
+        margin: 25px;
+        }
+        div{
+        border: 1px solid red;
+        }
+
+</style>
+<body>
+    <div class="outer-top">
+        <div class="inner-top">
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur veniam, hic animi illo officia reprehenderit autem ipsam sit cupiditate eius id blanditiis, alias corporis in voluptas. Sint, odit. Dolorum, unde?
+        </div>
+       </div>
+       <div class="outer-bottom">
+        <div class="inner-bottom">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores nihil sed a culpa atque quo magni suscipit modi impedit aliquid! Possimus temporibus quibusdam quaerat laboriosam beatae provident nemo facilis aut!
+        </div>
+       </div>
+</body>
+</html>
