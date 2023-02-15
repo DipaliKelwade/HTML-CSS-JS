@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertically align dynamic height elements</title>
+</head>
+<style>
+    .vcenter--container {
+    display: table;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    }
+    .vcenter--helper {
+    display: table-cell;
+    vertical-align: middle;
+    }
+    .vcenter--content {
+    margin: 0 auto;
+    width: 200px;
+    }
+
+</style>
+<body>
+    <div class="vcenter--container">
+        <div class="vcenter--helper">
+        <div class="vcenter--content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae exercitationem quasi iste, dolores autem officiis voluptas nesciunt impedit. Aliquid, possimus nesciunt iste quaerat deleniti pariatur ipsa velit cumque. Animi, expedita.
+        </div>
+        </div>
+       </div>
+       
+</body>
+</html>

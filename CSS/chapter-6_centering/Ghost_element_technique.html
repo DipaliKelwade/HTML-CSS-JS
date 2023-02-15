@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost element technique</title>
+</head>
+<style>
+    .block {
+    text-align: center;
+    white-space: nowrap;
+    }
+    .block:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+    }
+    .centered {
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+    white-space: normal; /* Resetting inherited nowrap behavior */
+    }
+
+</style>
+<body>
+    <div class="block">
+        <div class="centered"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt hic tempora illo. Ratione iste commodi odio praesentium tempore aut. Ipsa veritatis nihil natus quod molestiae? Laborum iure libero explicabo dicta?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, sit voluptas! Explicabo asperiores nemo error rem earum in qui? Magnam pariatur reiciendis qui omnis nisi beatae dicta officia vel illum.</div>
+       </div>
+</body>
+</html>

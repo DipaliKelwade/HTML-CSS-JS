@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertically align an image inside div</title>
+</head>
+<style>
+    .wrap {
+        height: 50px;/* max image height */
+        width: 100px;
+        border: 1px solid blue;
+        text-align: center;
+        }
+        .wrap:before {
+        content:"";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        width: 1px;
+        }
+        img {
+        vertical-align: middle;
+        }
+
+</style>
+<body>
+    <div class="wrap">
+        <img src="img.jpg" />
+       </div>
+</body>
+</html>
