@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The !important declaration</title>
+</head>
+<style>
+    #mydiv {
+    font-weight: bold !important; 
+    }
+    #outerdiv #mydiv {
+    font-weight: normal; 
+    }
+</style>
+<body>
+    
+    <div id="outerdiv">
+        <div id="mydiv">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quas ea optio totam quisquam voluptatibus atque unde quia maxime fugit deleniti cupiditate amet, sed odit! Cumque eum illum praesentium similique!
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculating Selector Specificity</title>
+</head>
+<style>
+    .div1{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: blue;
+    }
+    #div2{
+        background-color: brown;
+        padding: 10px;
+        flex: 1 1 auto;
+        flex-direction: row;
+        border: 1px solid #000;
+        text-align: center;
+        overflow: auto;
+        height: 50vh;
+
+    }
+    #div3{
+        background-color: blueviolet;
+        flex: 0 0 150px;
+        display: flex;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="div1">
+            <h1>Header</h1>
+        </div>
+        <div id="div2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, temporibus. Libero dolorem eligendi aspernatur laboriosam sequi quibusdam ratione earum nesciunt, temporibus, totam, amet ex magni! Fugiat sequi incidunt molestias veniam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facilis, iure sunt aut sint in quam non ea quas maxime optio deleniti reprehenderit eveniet deserunt perspiciatis voluptatem laudantium quaerat quo.</p>
+        </div>
+        <div id="div3">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+</html>
