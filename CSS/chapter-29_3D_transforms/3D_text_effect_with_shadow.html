@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D text eect with shadow</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html, body{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background: #109bc9;
+    }
+    #title{
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        perspective-origin: 50%, 50%;
+        perspective: 300px;
+    }
+    h1{
+        text-align: center;
+        font-size: 12vmin;
+        font-family: 'Courier New', Courier, monospace;
+        color: rbga(0, 0 , 0, 0.8);
+        line-height: 1em;
+        transform: rotateY(50deg);
+        perspective: 150px;
+        perspective-origin: 0% 50%;
+    }
+    h1:after{
+        content: attr(data-content);
+        position: absolute;
+        left: 0; top: 0;
+        transform-origin: 50% 100%;
+        transform: rotateX(-90deg);
+        color: #0099CC;
+    }
+    #title:before{
+        content: '';
+        position: absolute;
+        top: -150%; left: -25%;
+        width: 180%; height: 328%;
+        background: rbga(255, 255, 255, 0.7);
+        transform-origin: 0 100%;
+        transform: translatez(-200px) rotate(40deg) skewX(35deg);
+        border-radius: 0 0 100% 0;
+    }
+</style>
+<body>
+    <div id="title">
+        <h1 data-content="HOVER">HOVER</h1>
+    </div>
+</body>
+</html>

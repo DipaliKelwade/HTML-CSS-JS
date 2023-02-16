@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backface-visibility</title>
+</head>
+<style>
+    .flip{
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -webkit-backface-visibility: visible;
+        -moz-backface-visibility: visible;
+        -ms-backface-visisbility: visible;
+    }
+    .flip.back{
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visisbility: hidden;
+    }
+</style>
+<body>
+    <div class="flip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quod perferendis temporibus hic ipsa quasi ab, sint cumque id maxime dignissimos minus ipsam voluptate explicabo dolorum quaerat qui voluptatibus voluptas!</div>
+    <div class="flip back">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam culpa excepturi optio laudantium omnis minima veniam, repellat sunt ducimus nulla labore quaerat magni incidunt neque voluptas architecto, delectus accusamus ab?</div>
+</body>
+</html>
