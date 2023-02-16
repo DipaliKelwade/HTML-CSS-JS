@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increasing Animation Performance Using the `will-change` Attribute</title>
+</head>
+<style>
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: antiquewhite;
+    }
+    div:hover{
+        will-change: transform, opacity;
+        transition: opacity .25s ease-in-out;
+        height: 200px;
+        background-color: bisque;
+    }
+
+</style>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
