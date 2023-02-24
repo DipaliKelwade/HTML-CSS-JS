@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using the DOM API (with graphical text: Canvas, SVG, or image file)</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.width = 500;
+    svg.height = 50;
+
+    var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    text.setAttribute('x', '0');
+    text.setAttribute('y', '50');
+    text.style.fontFamily = 'Times New Roman';
+    text.style.fontSize = '50';
+
+    text.textContent = 'Hello world!';
+
+    svg.appendChild(text);
+    document.body.appendChild(svg);
+
+</script>
+</html>

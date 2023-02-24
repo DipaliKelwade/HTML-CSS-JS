@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM API</title>
+</head>
+<body>
+    <p id="paragraph"></p>
+    <p id="paragraph1"></p>
+    <p id="paragraph2"></p>
+</body>
+<script>
+    var element = document.createElement('p');
+    element.textContent = "Hello, World1";
+    document.body.appendChild(element);
+    document.getElementById("paragraph").textContent = "Hello, World";
+    document.getElementById("paragraph1").textContent = "Hello";
+    document.getElementById("paragraph2").textContent = "Welcome!"
+</script>
+</html>
