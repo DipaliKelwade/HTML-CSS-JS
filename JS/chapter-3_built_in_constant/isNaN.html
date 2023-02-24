@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing for NaN using isNaN()</title>
+</head>
+<body>
+    
+</body>
+<script>
+    window.alert(isNaN(NaN));
+    window.alert(isNaN(1));
+    window.alert(isNaN(-2e-4));
+    window.alert(isNaN(Infinite));
+    window.alert(isNaN(true));
+    window.alert(isNaN(false));
+    window.alert(isNaN(null));
+    window.alert(isNaN(""));
+    window.alert(isNaN(" "));
+    window.alert(isNaN("45.3"));
+    window.alert(isNaN("41.2e3"));
+    window.alert(isNaN("Infinity"));
+    window.alert(isNaN(new Date));
+    window.alert(isNaN("10$"));
+    window.alert(isNaN("hello"));
+    window.alert(isNaN(undefined));
+    window.alert(isNaN());
+    window.alert(isNaN(function(){}));
+    window.alert(isNaN({}));
+    window.alert(isNaN([1, 2]));
+</script>
+</html>
