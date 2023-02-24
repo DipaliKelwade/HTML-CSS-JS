@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting object type by constructor name</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+</body>
+<script>
+   var a = Object.prototype.toString.call("String");
+   var b = Object.prototype.toString.call(42);
+   var c = Object.prototype.toString.call(true);
+   var d = Object.prototype.toString.call(Object());
+   var e = Object.prototype.toString.call(function(){});
+   var f = Object.prototype.toString.call(new Date(2011,03,21));
+   var g = Object.prototype.toString.call(new RegExp());
+   var h = Object.prototype.toString.call([]);
+   var i = Object.prototype.toString.call(null);
+   var j = Object.prototype.toString.call(undefined);
+   var k = Object.prototype.toString.call(Error());
+
+   document.getElementById("demo1").innerHTML = a;
+   document.getElementById("demo2").innerHTML = b;
+   document.getElementById("demo3").innerHTML = c;
+   document.getElementById("demo4").innerHTML = d;
+   document.getElementById("demo5").innerHTML = e;
+   document.getElementById("demo6").innerHTML = f;
+   document.getElementById("demo7").innerHTML = g;
+   document.getElementById("demo8").innerHTML = h;
+   document.getElementById("demo9").innerHTML = i;
+   document.getElementById("demo10").innerHTML = j;
+   document.getElementById("demo11").innerHTML = k;
+
+</script>
+</html>
