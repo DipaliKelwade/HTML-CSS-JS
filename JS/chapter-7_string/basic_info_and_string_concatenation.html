@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Info and String Concatenation</title>
+</head>
+<body>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    <p id="d"></p>
+</body>
+<script>
+
+    var helloworld = `Hello World`;
+    document.getElementById("a").innerHTML = helloworld;
+
+    var intString = (5232).toString();
+    document.getElementById("b").innerHTML = intString;
+
+    var booleanString = (false).toString(); 
+    document.getElementById("c").innerHTML = booleanString;
+
+    var objString = ({}).toString();
+    document.getElementById("d").innerHTML = objString;
+
+</script>
+</html>
