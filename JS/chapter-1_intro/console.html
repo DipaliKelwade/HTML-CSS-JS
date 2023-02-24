@@ -1,0 +1,45 @@
+<body>
+    <h2 id="heading-2" class="heading-class">Getting started with JS</h2>
+    <p id="paragraph">This is paragraph</p>
+
+    <script>
+        // using console.log() -> used to write messages to the console; can be used to log variables as well
+        // logging message
+        console.log("Hello, World!");
+    
+        // logging variables
+        var one=21;
+        console.log(one);
+    
+        var first = "Deepali";
+        var second = "Ghadia"
+        console.log("First name: ", first, "and", "Second name: ", second);
+    
+        // logging HTML elements
+        // logging HTML body
+        console.log(document.body);
+    </script>
+
+    <script>
+        // using DOM
+        // Changing the content of the paragraph -> it will be displayed on the webpage
+        document.getElementById("paragraph").textContent = "The content of this paragraph is changed using DOM";
+    </script>
+
+    <script>
+        // using window.alert()
+        // displays a visual alert box on the screen
+        window.alert("This alert is created using window.alert() function");
+    </script>
+
+    <script>
+        // using window.prompt() -> get input from user using prompt function
+        // the prompt will be shown like an alert box
+        var age = prompt("Enter your name");
+    </script>
+
+    <script>
+         Using window.confirm() -> shows confirmation dialog box
+        window.confirm("Please click on OK to confirm");
+    </script>
+</body>
